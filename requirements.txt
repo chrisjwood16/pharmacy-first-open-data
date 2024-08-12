@@ -87,6 +87,7 @@ descartes==1.1.0
     # via ebmdatalab
 ebmdatalab==0.0.31
     # via -r requirements.in
+et-xmlfile==1.1.0
 executing==2.0.1
     # via stack-data
 fastjsonschema==2.19.1
@@ -101,6 +102,7 @@ fqdn==1.5.1
     # via jsonschema
 geopandas==0.14.3
     # via ebmdatalab
+gevent==24.2.1
 google-api-core[grpc]==2.18.0
     # via
     #   google-cloud-bigquery
@@ -130,6 +132,8 @@ googleapis-common-protos==1.63.0
     # via
     #   google-api-core
     #   grpcio-status
+greenlet==3.0.3
+grequests==0.7.0
 grpcio==1.62.2
     # via
     #   google-api-core
@@ -303,6 +307,7 @@ numpy==1.26.4
     #   statsmodels
 oauthlib==3.2.2
     # via requests-oauthlib
+openpyxl==3.1.5
 overrides==7.7.0
     # via jupyter-server
 packaging==24.0
@@ -554,6 +559,8 @@ widgetsnbextension==4.0.10
     # via ipywidgets
 zipp==3.18.1
     # via importlib-metadata
+zope.event==5.0
+zope.interface==6.4.post2
 
 # The following packages are considered to be unsafe in a requirements file:
 # pip

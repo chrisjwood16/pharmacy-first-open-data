@@ -19,4 +19,10 @@ def fetch_pca_data():
     # Save data to file
     df.to_csv("../data/pca_data.csv", index=False)
 
+    # Convert YEAR_MONTH from YYYYMM to a string and then to datetime, setting day as 01
+    df['YEAR_MONTH'] = pd.to_datetime(df['YEAR_MONTH'].astype(str) + '01', format='%Y%m%d')
+
+    # Format the datetime object to YYYY-MM-DD
+    #df['YEAR_MONTH'] = df['YEAR_MONTH'].dt.strftime('%Y-%m-%d')
+
     return df
